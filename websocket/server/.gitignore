@@ -2,8 +2,8 @@
 
 Backup*
 _UpgradeReport_Files
-bin
-obj
+bin/
+obj/
 
 *.mdb
 *.pdb
@@ -12,4 +12,3 @@ obj
 *.user
 *.userprefs
 UpgradeLog*.*
-

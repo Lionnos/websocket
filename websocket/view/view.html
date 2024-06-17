@@ -3,7 +3,8 @@
 
 <head>
     <title>Websocket</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="brand-hipchat.svg" type="image/svg+xml">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,13 +14,14 @@
         }
 
         #chatContainer {
-            width: 50%;
+            width: 400px;
             margin: 20px auto;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         #messages {
@@ -65,12 +67,21 @@
             font-size: 24px;
             margin-bottom: 15px;
         }
+
+        #usernameDisplay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            color: #24a14a;
+        }
     </style>
 </head>
 
 <body>
     <div id="chatContainer">
         <h1>Chat</h1>
+        <p id="usernameDisplay"></p> 
         <div id="messages"></div>
         <div class="inputContainer">
             <input id="messageInput" type="text" placeholder="Ingrese su mensaje">

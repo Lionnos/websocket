@@ -31,13 +31,12 @@ socket.onerror = function (error) {
 };
 
 function setUsername() {
-    username = prompt("Ingrese su usuario");
+    username = prompt("Ingrese tu usuario");
     if (username.trim() === "") {
         setUsername();
         return;
     }
-    document.getElementById('usernameInput').value = username;
-    document.getElementById('usernameInput').disabled = true;
+    document.getElementById('usernameDisplay').innerText = username;
 }
 
 function sendMessage() {
