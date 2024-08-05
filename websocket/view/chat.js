@@ -1,7 +1,7 @@
 let username = '';
 let usernameColor = getRandomColor();
 
-const socket = new WebSocket("ws://localhost:5090/ws");
+const socket = new WebSocket("ws://25.11.24.210:5000/ws");
 
 socket.onopen = function (e) {
     console.log("[open] Connection established");
